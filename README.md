@@ -103,6 +103,18 @@ API key 使用 Windows DPAPI CurrentUser 加密，配置和 tunnel profile 只�
 
 现在可以直接说：“请用抖音转文字处理这个链接：……”
 
+## 交给 AI 部署和排查
+
+如果不熟悉终端，不需要自己猜命令。把仓库链接交给能够操作本机的 AI 编程助手，让它完整阅读 [`AI_SETUP.md`](AI_SETUP.md)。该文档已经写明：
+
+- 从环境检查、安装 Qwen、配置 Tunnel 到真实 ChatGPT 验收的完整顺序；
+- `DIAGNOSE.cmd` 每个布尔字段的含义和下一步；
+- Windows 重启、Tunnel 未就绪、工具不可见、链接解析失败和转录失败的分层排查方法，详见 [`TROUBLESHOOTING.md`](TROUBLESHOOTING.md)；
+- 哪些步骤必须由设备所有者本人输入敏感信息；
+- 哪些结果只是静态检查，哪些才算真实端到端可用。
+
+AI 编程工具还可以自动读取 [`AGENTS.md`](AGENTS.md) 中的项目边界。需要求助前请先阅读 [`SUPPORT.md`](SUPPORT.md)：这是自助式实验项目，优先由使用者自己的 AI 按文档检查和修复，不提供逐台电脑的远程安装或个人环境人工兜底。
+
 ## 日常使用
 
 - 每次 Windows 重启后运行 `START.cmd`。

@@ -30,6 +30,12 @@ Requirements: Windows 10/11 x64, Node.js 20+, Python 3.12 or `uv`, FFmpeg/FFprob
 
 After a Windows restart, run `START.cmd` again. The tunnel identity remains stable, so the ChatGPT connection does not need a new URL.
 
+## AI-assisted deployment and troubleshooting
+
+Give the repository URL to an AI coding assistant that can operate the local Windows computer, and ask it to read [`AI_SETUP.md`](AI_SETUP.md), [`TROUBLESHOOTING.md`](TROUBLESHOOTING.md), [`AGENTS.md`](AGENTS.md), [`SECURITY.md`](SECURITY.md), and [`SUPPORT.md`](SUPPORT.md) in full. The AI runbook separates environment checks, local MCP health, Tunnel readiness, ChatGPT tool discovery, and real end-to-end acceptance. It also identifies command side effects and the credential steps that must be completed privately by the device owner.
+
+This is a self-service experimental project. The documentation is intended to let each user's own AI perform installation and local diagnosis; the author does not provide per-machine remote setup or private-environment troubleshooting.
+
 Never commit or share `runtime/`, `logs/`, `tools/`, model files, transcripts containing private material, runtime API keys, or tunnel profiles.
 
 Project code is MIT licensed. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for dependency and model licenses.
